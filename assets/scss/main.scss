@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	&.lock {
+		overflow: hidden;
+	}
+}
+.header {
+	&-top {
+		height: 40px;
+		background-color: black;
+	}
+	&-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: block;
+		margin: 25px 0px;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background-color: magenta;
+	}
+
+	.nav {
+		flex: 1 0 auto;
+		display: none;
+		&.fixed {
+			-webkit-overflow-scrolling: touch;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0;
+			background-color: rgba(255, 218, 185, 0.5);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			overflow: auto;
+			@media (max-width: 2000px) {
+				ul {
+					width: 100%;
+					height: auto;
+					padding: 200px 0px;
+					list-style: none;
+					display: block;
+					background: rgba(0, 0, 0, 0.5);
+
+					li {
+						padding: 10px 20px;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		&-icon {
+			height: 35px;
+			width: 35px;
+			background-color: lightgreen;
+			position: fixed;
+			z-index: 5;
+			right: 20px;
+			top: 20px;
+
+			&:hover {
+				background-color: #ffcc00;
+			}
+		}
+	}
+}
+
+.section {
+	height: 150vh;
+
+	&-1 {
+		background-color: limegreen;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/au-kddi/190/cat-face_1f431.png");
+	}
+	&-2 {
+		background-color: coral;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/softbank/145/cat-face_1f431.png");
+	}
+	&-3 {
+		background-color: yellow;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/cat-face_1f431.png");
+	}
+	&-4 {
+		background-color: crimson;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cat-face_1f431.png");
+	}
+	&-5 {
+		background-color: cornflowerblue;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/263/cat-face_1f431.png");
+	}
+	&-6 {
+		background-color: palevioletred;
+		background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/joypixels/257/cat-face_1f431.png");
+	}
+}
