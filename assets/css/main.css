@@ -15,9 +15,11 @@ body {
 html.lock,
 body.lock {
   overflow: hidden;
+  pointer-events: none;
 }
 
 .wrapper.lock {
+  pointer-events: none;
   overflow: hidden;
 }
 
@@ -38,7 +40,7 @@ body.lock {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: magenta;
+  background-color: red;
 }
 
 .header .nav {
@@ -58,6 +60,7 @@ body.lock {
   justify-content: center;
   align-items: flex-start;
   overflow: auto;
+  pointer-events: auto;
 }
 
 @media (max-width: 2000px) {
@@ -81,6 +84,7 @@ body.lock {
   z-index: 5;
   right: 20px;
   top: 20px;
+  pointer-events: auto;
 }
 
 .header .nav-icon:hover {

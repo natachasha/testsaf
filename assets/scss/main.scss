@@ -10,20 +10,24 @@
 html,
 body {
 	height: 100%;
+
 	&.lock {
 		overflow: hidden;
+		pointer-events: none;
 		// height: 100vh;
 		// position: relative;
 	}
 }
 .wrapper {
 	// height: 100%;
+	// overflow-y: auto;
+	// position: relative;
 
+	// height: 100%;s
 	&.lock {
+		pointer-events: none;
 		overflow: hidden;
 		// touch-action: pan-y pinch-zoom;
-		// height: 100%;
-		// position: relative;
 	}
 }
 .header {
@@ -43,7 +47,7 @@ body {
 		height: 50px;
 		width: 50px;
 		border-radius: 50%;
-		background-color: magenta;
+		background-color: red;
 	}
 
 	.nav {
@@ -62,6 +66,7 @@ body {
 			justify-content: center;
 			align-items: flex-start;
 			overflow: auto;
+			pointer-events: auto;
 			@media (max-width: 2000px) {
 				ul {
 					width: 100%;
@@ -93,7 +98,7 @@ body {
 			z-index: 5;
 			right: 20px;
 			top: 20px;
-
+			pointer-events: auto;
 			&:hover {
 				background-color: #ffcc00;
 			}
