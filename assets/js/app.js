@@ -6,7 +6,7 @@ const body = document.querySelector("body"),
 btnNav.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-	// body.classList.toggle("lock");
-	wrapper.classList.toggle("lock");
+	body.classList.toggle("lock");
+	// wrapper.classList.toggle("lock");
 	menu.classList.toggle("fixed");
 }
