@@ -59,16 +59,20 @@ body {
 			@media (max-width: 2000px) {
 				ul {
 					width: 100%;
-					height: auto;
+					// height: 100%;
 					// padding: 200px 0px;
 					list-style: none;
-					display: block;
+					// display: flex;
+					// flex-direction: column;
+					// flex-wrap: wrap;
+					// justify-content: center;
+					// align-items: center;
 					background: rgba(0, 0, 0, 0.5);
 
 					li {
 						padding: 10px 20px;
 						text-align: center;
-						// background-color: rgba(255, 0, 0, 0.2);
+						background-color: rgba(255, 0, 0, 0.2);
 					}
 				}
 			}
