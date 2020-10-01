@@ -11,9 +11,13 @@ html,
 body {
 	height: 100%;
 }
-body {
+
+.wrapper {
+	height: 100%;
 	&.lock {
 		overflow: hidden;
+		height: 100vh;
+		position: relative;
 	}
 }
 .header {
@@ -40,7 +44,7 @@ body {
 		flex: 1 0 auto;
 		display: none;
 		&.fixed {
-			-webkit-overflow-scrolling: touch;
+			// -webkit-overflow-scrolling: touch;
 			position: fixed;
 			height: 100%;
 			width: 100%;
@@ -50,7 +54,7 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			align-items: center;
+			align-items: flex-start;
 			overflow: auto;
 			@media (max-width: 2000px) {
 				ul {

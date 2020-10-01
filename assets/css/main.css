@@ -12,8 +12,14 @@ body {
   height: 100%;
 }
 
-body.lock {
+.wrapper {
+  height: 100%;
+}
+
+.wrapper.lock {
   overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 .header-top {
@@ -42,7 +48,6 @@ body.lock {
 }
 
 .header .nav.fixed {
-  -webkit-overflow-scrolling: touch;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -52,7 +57,7 @@ body.lock {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: auto;
 }
 
